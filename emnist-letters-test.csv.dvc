@@ -1,0 +1,5 @@
+outs:
+- md5: 68802487648aafe5a3717ae21ddaabf4
+  size: 28625756
+  hash: md5
+  path: emnist-letters-test.csv

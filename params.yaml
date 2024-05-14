@@ -1,0 +1,31 @@
+params:
+  model_no: 1 # Model No.
+  num_epochs: 10
+  batch_size: 64
+  model_config: {
+    1: {
+          'Activation Function': 'Tanh',
+          'J1': 120,
+          'J2': 84
+      },
+    2: {
+        'Activation Function': 'ReLU',
+        'J1': 120,
+        'J2': 84
+    },
+    3: {
+        'Activation Function': 'Sigmoid',
+        'J1': 120,
+        'J2': 84
+    },
+    4: {
+        'Activation Function': 'Tanh',
+        'J1': 100,
+        'J2': 50
+    },
+    5: {
+        'Activation Function': 'Tanh',
+        'J1': 50,
+        'J2': 30,
+    }
+  } # Model config dictionary

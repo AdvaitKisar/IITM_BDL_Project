@@ -1,0 +1,5 @@
+outs:
+- md5: 5c6c8a67b5f4ad7ed655c8d723dc05bb
+  size: 171610185
+  hash: md5
+  path: emnist-letters-train.csv
