@@ -103,7 +103,7 @@ for epoch in range(1, num_epochs+1): # Iterating for each epoch
     print(f"\nEpoch {epoch}: Accuracy on Validation Set = {acc_val:.2f} %")
     
     if acc_val > best_acc_val:
-        torch.save(model.state_dict(), f'model - {model_no}.pth') # Model is saved
+        torch.save(model.state_dict(), f'model_{model_no}.pth') # Model is saved
         print(f"Model for epoch no. {epoch} saved.")
         best_acc_val = acc_val
     end_epoch = time.time() # End of epoch
@@ -120,7 +120,7 @@ plt.title('Training Cost Function', color="blue")
 plt.grid(linestyle='--')
 plt.tight_layout()
 plt.legend()
-plt.savefig(f"Training Cost Function for Model {model_no}.jpg", dpi=500)
+plt.savefig(f"Training_Cost_Function_for_Model_{model_no}.jpg", dpi=500)
 
 # Plot for dataset accuracy with epochs
 plt.plot(np.arange(1, num_epochs+1, 1), accuracy_train_list, marker=".", markersize="8", label="Training Dataset Accuracy", color="red")
@@ -131,13 +131,13 @@ plt.title('Accuracy Variation', color="blue")
 plt.grid(linestyle='--')
 plt.tight_layout()
 plt.legend()
-plt.savefig(f"Accuracy Variation for Model {model_no}.jpg", dpi=500)
+plt.savefig(f"Accuracy_Variation_for_Model_{model_no}.jpg", dpi=500)
 
 print("Plots have been saved.")
 
 # Best model is loaded
 best_model = f.create_model(model_no, model_config)  # Create a new instance of the model class
-best_model.load_state_dict(torch.load(f'model - {model_no}.pth'))
+best_model.load_state_dict(torch.load(f'model_{model_no}.pth'))
 print("Best model has been loaded.")
 
 # It is set to evaluation mode for testing
