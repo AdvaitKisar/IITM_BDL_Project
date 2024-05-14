@@ -5,8 +5,8 @@ stages:
     deps:
     - path: main.py
       hash: md5
-      md5: 369dd054de8424a05f8dace2431510a6
-      size: 7422
+      md5: 5a25e7c7d9c5333a228d18493a5b488c
+      size: 7438
     params:
       params.yaml:
         params.batch_size: 64
@@ -31,5 +31,5 @@ stages:
             Activation Function: Tanh
             J1: 50
             J2: 30
-        params.model_no: 2
+        params.model_no: 3
         params.num_epochs: 10
