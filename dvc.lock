@@ -31,5 +31,5 @@ stages:
             Activation Function: Tanh
             J1: 50
             J2: 30
-        params.model_no: 3
+        params.model_no: 4
         params.num_epochs: 10
