@@ -1,0 +1,10 @@
+stages:
+  main:
+    cmd: python main.py
+    deps:
+    - main.py
+    params:
+    - params.batch_size
+    - params.model_config
+    - params.model_no
+    - params.num_epochs
