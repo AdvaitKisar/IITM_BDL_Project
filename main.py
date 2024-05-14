@@ -40,7 +40,7 @@ val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=True)
 # Model is created
 model = f.create_model(model_no, model_config)
 model
-print("\nModel has been created.")
+print(f"\nModel No. {model_no} has been created.")
 
 # Criterion and optimizer for training the model
 criterion = nn.CrossEntropyLoss()

@@ -1,5 +1,5 @@
 params:
-  model_no: 2 # Model No.
+  model_no: 3 # Model No.
   num_epochs: 10
   batch_size: 64
   model_config: {
